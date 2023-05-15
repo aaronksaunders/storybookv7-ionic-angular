@@ -2,6 +2,9 @@
 
 Simple demonstration of using storybook v7 with ionic framework
 
+## Video
+- https://www.youtube.com/watch?v=8rVCbD_8oDs
+
 ## Setup
 
 In project directory
