@@ -66,8 +66,7 @@ Error: node_modules/webpack/types.d.ts:10934:41 - error TS2315: Type 'ServerOpti
 
 10934 > = SecureContextOptions & TlsOptions & ServerOptionsImport<Request, Response>;
 ```
-I resolved it by using "skipLibCheck": true in your `tsconfig.json` under "compilerOptions"
+I resolved it by using "skipLibCheck": true in your `tsconfig.app.json` under "compilerOptions"
 
-### Icons Not Showing
-Cannot figure out why icons wont show in Story, there was an issue in the past with Ionic and Icons, but it was closed
+
 
