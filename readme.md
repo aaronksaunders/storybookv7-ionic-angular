@@ -1,6 +1,6 @@
 # Simple Storybook v7 Angular Ionic Integration 
 
-Simple demostration of using storybook v7 with ionic framework
+Simple demonstration of using storybook v7 with ionic framework
 
 ## Setup
 
