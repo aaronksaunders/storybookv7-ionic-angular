@@ -1,0 +1,49 @@
+<div>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ memberInfo?.name }}</ion-card-title>
+      <ion-card-subtitle>
+        <span *ngIf="memberInfo?.companyName">{{ memberInfo?.companyName }} : </span>
+        {{ memberInfo?.title }}
+        </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div>{{ memberInfo?.bio }}</div>
+      <ion-item lines="none" class="ion-float-right">
+        <ion-button
+          *ngIf="memberInfo?.linkedIn"
+          (click)="
+            onClick.emit({
+              event: 'social-clicked',
+              value: memberInfo?.linkedIn
+            })
+          "
+          ><ion-icon icon="logo-linkedin" slot="start"></ion-icon
+          >LinkedIn</ion-button
+        >
+        <ion-button
+          *ngIf="memberInfo?.twitter"
+          (click)="
+            onClick.emit({
+              event: 'social-clicked',
+              value: memberInfo?.twitter
+            })
+          "
+          ><ion-icon icon="logo-twitter" slot="start"></ion-icon
+          >Twitter</ion-button
+        >
+        <ion-button
+          *ngIf="memberInfo?.website"
+          (click)="
+            onClick.emit({
+              event: 'social-clicked',
+              value: memberInfo?.website
+            })
+          "
+          ><ion-icon icon="globe" slot="start"></ion-icon>Web Site</ion-button
+        >
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</div>
